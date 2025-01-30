@@ -39,3 +39,9 @@
 #### props pass from parent to child
 
 #### react does not track js variable so we have to use useState to create variables
+
+## ch7 how use state works behind the scenes
+
+#### useState only update value at once with onclick handler
+
+#### Incase if you want to give previous value reference and want to update it to multiple times you have to use useState((previousState)=>count + 1) previous state with callback function but react keep tracks of it but it does not change the actual value like [count,setCount] it does not change count, at the previousState give it's value to count after completing it's operation.
